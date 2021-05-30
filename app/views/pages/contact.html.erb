@@ -1,5 +1,10 @@
 <h1>This is the contact page 👋</h1>
 
+<form action="/contact" method="get">
+  <input type="text" placeholder="Who are you looking for?" name="member">
+  <input type="submit">
+</form>
+
 <ul>
   <% @members.each do |member| %>
     <li><%= member.capitalize %></li>
