@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   # 👇🏻 On Food Delivery we did something like this
 	# when '2' do "meals#list"
 
-  get "/about", to: "pages#about"
+  root to: 'pages#home'
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
 end
