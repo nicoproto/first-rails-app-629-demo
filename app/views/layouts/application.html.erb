@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <div style="background-color: goldenrod; padding: 16px;">
+      Navbar 🛸
+      <%# link_to 'link text', route_prefix + '_path' %>
+      <%= link_to "home", root_path %>
+      <%= link_to "about", about_path %>
+      <%= link_to "contact", contact_path %>
+    </div>
     <%= yield %>
+    <div style="background-color: goldenrod; padding: 16px;">
+      Footer 🦶
+    </div>
   </body>
 </html>

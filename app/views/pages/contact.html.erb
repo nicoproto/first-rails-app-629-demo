@@ -1,1 +1,7 @@
 <h1>This is the contact page 👋</h1>
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ul>
